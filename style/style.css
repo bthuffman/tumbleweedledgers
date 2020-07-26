@@ -1,0 +1,187 @@
+/*GLOBAL STYLES
+***********************************************************************/
+/*This targets all sections to get rid of this awful box-shadow that cuts through my page elements.*/
+* {
+	box-shadow: none !important;
+}
+
+/*This makes an exception of the navbar to the rule above*/
+nav {
+	box-shadow: 5px 5px 5px black !important;
+}
+
+a:hover{
+	color: limegreen !important;
+}
+
+/*Page font family*/
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+/*get's rid of the horizontal scroll on both desktops and mobile devices.*/
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/*Fixes the weird nav bar buttons on safari*/
+.btn ,
+.btn-primary {
+	-webkit-appearance: none;
+}
+/*NAVIGATION BAR
+***********************************************************************/
+/*.nav-link,*/
+.btn-primary,
+.navbar-brand
+{
+	color: white !important;
+}
+
+/*.nav-link:hover,*/
+.btn-primary:hover,
+.navbar-brand:hover
+{
+	color: #41fa53 !important;
+}
+
+/*Compatible button outline for firefox*/
+.btn-primary {
+	border: 1px solid black !important;
+}
+
+/*Navbar transparency*/
+.transparent-navigation {
+	opacity: 0.9;
+}
+
+/*hamburger button*/
+.navbar-toggler,
+.navbar-toggler-icon
+{
+	background-color: white;
+	}
+/*Jumbotron Styles
+***********************************************************************/
+/*style to linkedin and github icons*/
+.link-git-icons {
+	color: black !important;
+}
+
+/*Empty div tags to provide visually needed spacing*/
+.empty {
+	visibility: hidden;
+}
+
+/*Background cover for jumbotron. Picture courtesy of celicode.us*/
+.first-cover-background {
+	background: url(../images/lake-tahoe.jpg) no-repeat center center /cover;
+	display: flex;
+	image-resolution: 72dpi;
+}
+
+.jumbotron {
+	background: none;
+}
+
+/*Tag-Line Styles
+***********************************************************************/
+/*Typewriter text*/
+.typewriterText {
+	font-size: 3rem;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	padding: 0;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+/* Ads a blink animation to the text cursor (typewriter effect)*/
+@keyframes blink {
+	50% { border-color: white; }
+}
+
+.txt-type > .txt {
+	border-right: 0.2rem solid;
+	animation-name: blink ;
+	animation-duration: .5s ;
+	animation-timing-function: step-end ;
+	animation-iteration-count: infinite ;
+	animation-direction: alternate ;
+}
+
+/*creates horizontal line between Tag Line and Skills section*/
+hr {
+	width: 100px;
+}
+
+/*Skills Styles
+***********************************************************************/
+/*Style the images in skills*/
+.skills-img {
+	width: 15rem;
+	height: 15rem;
+	image-resolution: 72dpi;
+	border: 1px solid black;
+}
+
+/*Style programming language icons*/
+.language-icon {
+	width: 7rem;
+	height: 7rem;
+	image-resolution: 72dpi;
+}
+
+/*Portfolio Styles
+***********************************************************************/
+/*Project section of portfolio*/
+
+.portfolio-bg {
+	background-color: #00264d;
+}
+
+/*Size the portfolio's website pictures*/
+.web-project {
+	width: 300px;
+	height: 15rem;
+	image-resolution: 72dpi;
+	object-fit: cover;
+}
+
+/*Job section of portfolio*/
+.carousel-control {
+	width: 40%;
+}
+
+.carousel-img {
+	width: 5rem;
+	height: 3rem;
+}
+
+.carousel-job-title-text {
+	font-size: 3rem;
+}
+
+/*Carousel-background image courtesy of lachiavedisophia.com*/
+.carousel-background {
+	background: linear-gradient(rgba(0, 119, 191, 0.75),rgba(0, 119, 191, 0.5)), url(../images/canyon.jpg) no-repeat center center /cover;
+	height: 40rem;
+	display: flex;
+	image-resolution: 72dpi;
+}
+
+/*Media Queries
+***********************************************************************/
+/*Mobile friendly the portfolio's website pictures*/
+@media screen and (min-width:531px) {
+	.web-project {
+		width: 30rem;
+		height: 15rem;
+		image-resolution: 72dpi;
+		object-fit: cover;
+	}
+}
